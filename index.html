@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPS</title>
-</head>
-<body>
-    Test
-    <script src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Paper-Scissor</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <span class="grad-txt">Fire-Water-Grass</span>
+    </header>
+
+    <div class="score-board">
+      <div id="user-label" class="label-badge label-style">You</div>
+      <div id="computer-label" class="label-badge label-style">Comp</div>
+      <span id="user-score">0</span>:<span id="computer-score">0</span>
+    </div>
+
+    <div class="result">
+      <p>Fire burns Grass. You Win!</p>
+    </div>
+
+    <div class="choices">
+      <div class="choice" id="fire">
+        <img src="./images/trspFire.png" alt="Fire" />
+      </div>
+      <div class="choice" id="water">
+        <img src="./images/transpWater.png" alt="Water" />
+      </div>
+      <div class="choice" id="grass">
+        <img src="./images/transpGrass.png" alt="Grass" />
+      </div>
+    </div>
+
+    <p id="action">Pick Your Move...</p>
+
+    <script src="main.js" charset="utf-8"></script>
+  </body>
 </html>
